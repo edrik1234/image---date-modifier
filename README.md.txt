@@ -9,3 +9,6 @@ or this: pip install -r requirements.txt
 in addition: you need to install tesseract ocr i included this on folder tesseract download.
 take into account that this program is not accurate 100 precent , and you need accurately toggle in what area of picture you want to save the date.
 and last thing , make sure that the files of tesseract and the visual studio code are in the same folder and opened i will show you what i mean.
+
+if you have any question email me: razer4832@gmail.com.
+or: LinkedIn: https://www.linkedin.com/in/edrian-netyosov-9b412b282/
