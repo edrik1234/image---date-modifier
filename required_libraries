@@ -1,0 +1,24 @@
+required libraries:
+pillow
+pytesseract
+opencv-python
+tkinter
+
+how to install:
+pip install pillow pytesseract opencv-python
+
+About Tkinter:
+tkinter does not get installed via pip because it's part of the standard library in most Python distributions(in windows).
+
+On Linux, you may need to install it separately via your system package manager. For example:
+sudo apt-get install python3-tk
+
+On Mac, it should be included, but if not, reinstall Python via Homebrew or python.org.
+
+About tesseract:
+pytesseract requires you to install the Tesseract-OCR engine separately:
+Windows: Download and install from my folder of tesseract
+Linux:
+sudo apt-get install tesseract-ocr
+Mac:
+brew install tesseract

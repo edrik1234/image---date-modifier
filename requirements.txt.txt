@@ -1,6 +1,0 @@
-required libraries:
-pillow
-pytesseract
-opencv-python
-tkinter
-
