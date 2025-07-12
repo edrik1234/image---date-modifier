@@ -4,10 +4,8 @@ pytesseract
 opencv-python
 tkinter
 
-and run visual studio code.
-
-in order to install this you can use the command: pip install pillow  and etc... in visual studio terminal
-or this: pip install -r requirements.txt
+- and run visual studio code.
+- you have another readme how to install libraries.
 
 in addition: you need to install tesseract ocr i included this on folder tesseract download.
 take into account that this program is not accurate 100 precent , and you need accurately toggle in what area of picture you want to save the date.
