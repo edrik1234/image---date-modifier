@@ -11,6 +11,12 @@ Manually changing timestamps in images is time-consuming, so I built a tool that
 🔹 Replaces it while preserving style & format
 🔹 Works with JPG, PNG, BMP, and more!
 
+we used libraries: 
+pillow
+pytesseract
+opencv-python
+tkinter
+
 🔧 How to Use:
 1️⃣ Install Python dependencies (pip install -r requirements.txt)
 2️⃣ Install Tesseract OCR & place files in the project folder
