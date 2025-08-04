@@ -7,12 +7,11 @@ from tkinter import filedialog, simpledialog, messagebox
 import os
 import datetime
 import re
-import pytesseract
 # Manually set the path to Tesseract
-pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+#pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
-
-
+#pytesseract.pytesseract.tesseract_cmd = r"tesseract.exe"
+pytesseract.pytesseract.tesseract_cmd = r"C:\Users\badas\AppData\Local\Programs\Tesseract-OCR\tesseract.exe"
 
 # === Global Variables === #
 selected_area = None
@@ -43,7 +42,7 @@ def detect_date_text(image):
 
 # === Function to Select Area Manually === #
 def select_area():
-    global selected_area
+    global selected_area     
     img = cv2.imread(image_path)
     cv2.imshow("Select Date Area (Click and Drag)", img)
     r = cv2.selectROI("Select Date Area (Click and Drag)", img, showCrosshair=True, fromCenter=False)
@@ -53,8 +52,10 @@ def select_area():
 
 # === Function to Get User-Defined Date === #
 def get_user_date():
-    new_date = simpledialog.askstring("Enter New Date ", "Enter the new date (Format: MM/DD/YYYY HH:MM):")
-    return new_date.strip() if new_date else None
+    new_date = simpledialog.askstring("Enter New Date", "Enter the new date (Format: MM/DD/YYYY HH:MM):")
+    if new_date == "":
+        new_date = "\u200B"  # or "\u200C" for ZWNJ, etc.
+    return new_date if new_date is not None else None
 
 # === Function to Detect Text and Background Colors === #
 def detect_colors(roi):
